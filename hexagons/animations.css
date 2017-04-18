@@ -1,0 +1,84 @@
+.animMoveToLeft {
+	animation: moveToLeft 1s ease both;
+}
+
+@keyframes moveToLeft {
+	from { }
+	to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+.animMoveFromLeft {
+	animation: moveFromLeft 1s ease both;
+}
+
+@keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+.animMoveToRight {
+	animation: moveToRight 1s ease both;
+}
+
+@keyframes moveToRight {
+	from { }
+	to { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+.animMoveFromRight {
+	animation: moveFromRight 1s ease both;
+}
+
+@keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+.animMoveToUp {
+	animation: moveToUp .5s ease both;
+}
+
+@keyframes moveToUp {
+	from {}
+	to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+.animMoveFromUp {
+	animation: moveFromUp .5s ease both;
+}
+
+@keyframes moveFromUp {
+	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+.animMoveToDown {
+	animation: moveToDown .5s ease both;
+}
+
+@keyframes moveToDown {
+	from {}
+	to { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+.animMoveFromDown {
+	animation: moveFromDown .5s ease both;
+}
+
+@keyframes moveFromDown {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+.animTopBubble {
+	animation: moveBubble .5s ease both;
+}
+
+@keyframes moveBubble {
+	from {}
+	to { -webkit-transform: translateY(40%); transform: translateY(40%); }
+}
+
+.animTopBubbleBack {
+	animation: moveBubbleBack .5s ease both;
+}
+
+@keyframes moveBubbleBack {
+	from { -webkit-transform: translateY(-100%); transform: tranlateY(-100%); }
+}
