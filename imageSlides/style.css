@@ -1,0 +1,172 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.background {
+	background: linear-gradient(#133b3d 25%, #fdffdd 25% );
+	width: 100vw;
+	height: 100vh;
+}
+
+.frame {
+	width: 70vh;
+	height: 80vh;
+	position: absolute;
+	margin-left: 8vw;
+	margin-right: 55vw;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+	overflow: hidden;
+}
+
+.pic {
+	width: 70vh;
+	height: 70vh;
+	position: absolute;
+	visibility: hidden;
+	text-align: center;
+	font-size: 50px;
+}
+
+.navButtons {
+	margin-top: 40vh;
+	margin-left: 2.5vw;
+	z-index: 999;
+	position: absolute;
+}
+
+.button {
+	width: 5vw;
+	height: 5vw;
+	position: relative;
+	float: left;
+	background-color: #0f888c;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 50px;
+	color: #fdffdd;
+	line-height: 4.5vw;
+	box-shadow: 0px 2px 4px #113b3d;
+}
+
+.button:hover {
+	cursor: pointer;
+	background-color: #38a3d1;
+}
+
+.button:active {
+	box-shadow: none;
+	transform: scale(0.9);
+}
+
+.nextButton {
+	margin-left: 72vh;
+}
+
+.navDotsBar {
+	width: 50vh;
+	height: 4vh;
+	margin-top: 72vh;
+	margin-left: 5vw;
+	position: relative;
+}
+
+.navDot {
+	width: 2vh;
+	height: 2vh;
+	margin: 1vh;
+	margin-left: 2vh;
+	margin-right: 2vh;
+	background-color: #0f888c;
+	position: relative;
+	float: left;
+	border-radius: 50%;
+}
+
+.navDot:hover {
+	cursor: pointer;
+}
+
+.navDot:active {
+	transform: scale(0.9);
+}
+
+.navDot1 {
+	margin-left: 15vh;
+}
+
+.activeNavDot {
+	background-color: #19dee5;
+}
+
+.dataFrame {
+	height: 80vh;
+	width: 70vh;
+	margin-left: 55vw;
+	margin-top: 10vh;
+	position: absolute;
+}
+
+.caption {
+	display: none;
+	position: absolute;
+	width: 66vh;
+}
+
+.captionTitle {
+	color: #fdffdd;
+	font-size: 7vh;
+	text-align: left;
+	margin-top: 7vh;
+	margin-left: 3vh;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.captionContents {
+	color: #133b3d;
+	font-size: 18pt;
+	margin: 3vh;
+	font-family: 'Amiko', sans-serif;
+}
+
+.current {
+	visibility: visible;
+	display: block;
+}
+
+.animMoveToLeft {
+	animation: moveToLeft 1s ease both;
+}
+
+@keyframes moveToLeft {
+	from { }
+	to { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+.animMoveFromLeft {
+	animation: moveFromLeft 1s ease both;
+}
+
+@keyframes moveFromLeft {
+	from { -webkit-transform: translateX(-100%); transform: translateX(-100%); }
+}
+
+.animMoveToRight {
+	animation: moveToRight 1s ease both;
+}
+
+@keyframes moveToRight {
+	from { }
+	to { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
+
+.animMoveFromRight {
+	animation: moveFromRight 1s ease both;
+}
+
+@keyframes moveFromRight {
+	from { -webkit-transform: translateX(100%); transform: translateX(100%); }
+}
